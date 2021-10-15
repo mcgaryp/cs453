@@ -17,7 +17,7 @@ protected:
     std::string path;
 
 public:
-    explicit CanonicalPath(std::string &p) : path(p)
+    explicit CanonicalPath(std::string p) : path(p)
     {}
 
     // Corresponds to C().
