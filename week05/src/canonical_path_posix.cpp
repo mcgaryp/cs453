@@ -35,18 +35,13 @@ std::string CanonicalPathPOSIX::canonicalForm()
         }
     }
     if (part != ".")
-    vctr.push_back(part);
+        vctr.push_back(part);
   
-    cout << "\nVector =>";
     string newPath = "";
     for (vector<string>::iterator it = vctr.begin(); it < vctr.end(); it++) 
     {
-        if (!it->empty())
-            cout << *it << "_";
         newPath += *it;
     }
-
-    cout << endl << newPath << '\n';
 
     return newPath;
 }
